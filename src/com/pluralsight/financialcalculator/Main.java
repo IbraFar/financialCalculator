@@ -13,15 +13,15 @@ public class Main {
         double interestRate = scanner.nextDouble();
 
         System.out.println("Enter the loan length:");
-        int loanLength = scanner.nextInt();
+        int loanLength = scanner.nextInt() * 12;
 
 
         MortgageCalculator calculator =
                 new MortgageCalculator(principal, interestRate, loanLength);
 
-        System.out.printf(String.format("%.2f", calculator.monthlyPayment()));
+        System.out.printf("Your monthly payment is " + String.format("%.2f", calculator.monthlyPayment()));
         System.out.println(" ");
-        System.out.printf(String.format("%.2f", calculator.totalInterestPaid(calculator.monthlyPayment())));
+        System.out.printf("Your total interest paid is " + String.format("%.2f", calculator.totalInterestPaid(calculator.monthlyPayment())));
 
 
 

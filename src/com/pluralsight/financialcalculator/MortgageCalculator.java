@@ -1,3 +1,5 @@
+package com.pluralsight.financialcalculator;
+
 public class MortgageCalculator {
     int principal;
     double interestRate;
@@ -14,7 +16,7 @@ public class MortgageCalculator {
         double exponentCalculation = (Math.pow((1 + monthlyInterestRate),loanLength));
         double interestTimesExpCalc = monthlyInterestRate * (exponentCalculation);
         double numerator = principal * interestTimesExpCalc;
-        double denominator = exponentCalculation -1;
+        double denominator = exponentCalculation - 1;
         return  numerator / denominator;
     }
 

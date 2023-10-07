@@ -1,3 +1,5 @@
+package com.pluralsight.financialcalculator;
+
 import java.util.Scanner;
 
 public class Main {
